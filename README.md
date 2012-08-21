@@ -49,6 +49,12 @@ Fog::AWS::DynamoDB::Locker.release!('my lock')
 # => true
 ```
 
+## Challenges
+
+If a client process dies for any reason, the lock will not be removed.  A method will need to be put in place to clear likely deadlocks.
+
+Once again, we need a real 'Locks as a Service'.
+
 ## TODO
 
 * real specs
