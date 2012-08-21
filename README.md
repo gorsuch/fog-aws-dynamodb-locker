@@ -1,6 +1,8 @@
-# Fog::Aws::Dynamodb::Locker
+# Fog::AWS:DynamoDB::Locker
 
-TODO: Write a gem description
+This is an attempt to use DynamoDB as a lock store.
+
+We don't have a 'Locks as a Service' thing yet, so this is an experiment to make the best of what we do have.
 
 ## Installation
 
@@ -18,7 +20,31 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```bash
+export AWS_ACCESS_KEY_ID=...
+export AWS_SECRET_ACCESS_KEY=...
+export DYNAMODB_LOCK_TABLE='my-lock-table'
+```
+
+```ruby
+require 'fog/aws/dynamodb/locker'
+
+# first run only
+Fog::AWS::DynamoDB::Locker.init!
+
+# create a lock
+Fog::AWS::DynamoDB::Locker.lock!('my lock')
+
+# release it
+Fog::AWS::DynamoDB::Locker.release!('my lock')
+```
+
+## TODO
+
+* real specs
+* set a timestamp on each lock
+* allow metadata on each lock
+* `Fog::AWS::DynamoDB::Locker.sweep!(n)` to remove all locks that are `n` old
 
 ## Contributing
 
