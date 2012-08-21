@@ -8,7 +8,7 @@ Gem::Specification.new do |gem|
   gem.version       = Fog::AWS::DynamoDB::Locker::VERSION
   gem.authors       = ["Michael Gorsuch"]
   gem.email         = ["michael.gorsuch@gmail.com"]
-  gem.description   = %q{an attempt to leverage DynamoDB as a HA lock store.}
+  gem.description   = %q{an attempt to leverage DynamoDB as an HA lock store}
   gem.summary       = gem.description
   gem.homepage      = ""
 
