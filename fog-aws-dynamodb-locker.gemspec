@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'fog/aws/dynamodb/locker/version'
+require 'fog/aws/dynamodb/locker'
 
 Gem::Specification.new do |gem|
   gem.name          = "fog-aws-dynamodb-locker"
   gem.version       = Fog::AWS::DynamoDB::Locker::VERSION
   gem.authors       = ["Michael Gorsuch"]
   gem.email         = ["michael.gorsuch@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{an attempt to leverage DynamoDB as a HA lock store.}
+  gem.summary       = gem.description
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)

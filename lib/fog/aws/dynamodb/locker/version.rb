@@ -1,9 +1,3 @@
-module Fog
-  module AWS
-    class DynamoDB
-      module Locker
-        VERSION = "0.0.1"
-      end
-    end
-  end
+module Fog::AWS::DynamoDB::Locker
+  VERSION = "0.0.1"
 end
