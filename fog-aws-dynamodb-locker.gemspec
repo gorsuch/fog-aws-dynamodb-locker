@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["michael.gorsuch@gmail.com"]
   gem.description   = %q{an attempt to leverage DynamoDB as an HA lock store}
   gem.summary       = gem.description
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/gorsuch/fog-aws-dynamodb-locker"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
