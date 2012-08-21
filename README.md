@@ -4,7 +4,7 @@ This is an attempt to use DynamoDB as a lock store.
 
 We don't have a 'Locks as a Service' thing yet, so this is an experiment to make the best of what we do have.
 
-Inspired by the simplicity of [sequel-pg-locker](https://github.com/dylanegan/sequel-pg-locker) by @dylanegan.
+Inspired by the simplicity of [sequel-pg-locker](https://github.com/dylanegan/sequel-pg-locker) by [@dylanegan](https://github.com/dylanegan).
 
 ## Installation
 
