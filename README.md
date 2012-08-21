@@ -34,9 +34,15 @@ Fog::AWS::DynamoDB::Locker.init!
 
 # create a lock
 Fog::AWS::DynamoDB::Locker.lock!('my lock')
+# => true
+
+# try to claim it a second time
+Fog::AWS::DynamoDB::Locker.lock!('my lock')
+# => false
 
 # release it
 Fog::AWS::DynamoDB::Locker.release!('my lock')
+# => false
 ```
 
 ## TODO
