@@ -42,7 +42,7 @@ Fog::AWS::DynamoDB::Locker.lock!('my lock')
 
 # release it
 Fog::AWS::DynamoDB::Locker.release!('my lock')
-# => false
+# => true
 ```
 
 ## TODO
