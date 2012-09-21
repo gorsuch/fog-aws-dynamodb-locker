@@ -1,5 +1,7 @@
 # Fog::AWS:DynamoDB::Locker
 
+![logo](https://raw.github.com/gorsuch/fog-aws-dynamodb-locker/master/logo.jpg)
+
 This is an attempt to use DynamoDB as a lock store.
 
 We don't have a 'Locks as a Service' thing yet, so this is an experiment to make the best of what we do have.
